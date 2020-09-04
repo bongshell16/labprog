@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+*
+{
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+.wrapper
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.3);
+  max-width: 550px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .input
+{
+  width: 85%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.searchbtn
+{
+  background: #FFFFFF;
+  width: 10%;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.searchbtn .fas
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 18px;
+
+}
+
+
+.navbar
+{
+  background-color: #050505;
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.navbar a
+{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 28px;
+}
+.navbar a:hover
+{
+   background-color: white;
+   color: black;
+
+}
+.para p
+{
+  color: white;
+  text-align: justify;
+  padding: 20px;
+}
+#toggle
+{
+  display: none;
+}
+
+.togglearea
+{
+  background-color: #6D6A6A;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.togglearea label
+{
+   background-color: white;
+   height: 45px;
+   width: 50px;
+   color: black;
+   border-radius: 6px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.togglearea label span
+{
+    background-color: black;
+    height: 4px;
+    width: 70%;
+    margin: 4px 0px;
+}
+.togglearea
+{
+  display: none;
+}
+
+@media screen and (max-width: 700px)
+{
+  .navbar
+  {
+    flex-direction: column;
+    display: none;
+
+  }
+
+  #toggle:checked + .navbar
+  {
+    display: flex;
+  }
+
+  .togglearea
+   {
+  display: flex;
+   }
+
+}
+
+  body {
+  background-image: url('imm1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+   background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(imm1.jpg);
+}
+.para p
+{
+  color: white;
+  text-align: justify;
+  padding: 20px;
+}
+
+footer
+{
+  height: 200px;
+  background: #000;
+  padding: 50px;
+  text-align: left;
+ 
+}
+
+#GFG { 
+            text-decoration: none; 
+            color: white;
+        } 
+
+ h5
+ {
+  text-align: center;
+ }
+
+ ul li
+ {
+padding: 10px;
+
+ }
+
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr{
+  background-color: #dddddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
