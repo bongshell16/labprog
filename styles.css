@@ -55,10 +55,30 @@
 
 }
 
+.header {
+  padding: 10px; 
+  text-align: center; 
+  background: #050505; 
+  color: white; 
+  font-size: 30px;
+  border:1px;
+}
+
+
+.header a img {
+  float: left;
+  width: 80px;
+  height: 70px;
+  background: #555;
+  margin-right: 20px;
+}
+
+ 
 
 .navbar
 {
   background-color: #050505;
+  
   display: flex;
   justify-content: center;
 
@@ -77,6 +97,7 @@
 .navbar a:hover
 {
    background-color: white;
+   box-sizing: 30px;
    color: black;
 
 }
@@ -146,6 +167,12 @@
   display: flex;
    }
 
+
+  .wrapper
+  {
+    display: flex;
+  }
+  
 }
 
   body {
@@ -194,6 +221,7 @@ padding: 10px;
 
   table {
   font-family: arial, sans-serif;
+  font-size: 20px;
   border-collapse: collapse;
   width: 100%;
 }
@@ -208,6 +236,8 @@ td, th {
 tr{
   background-color: #dddddd;
 }
+
+
 
 
 
