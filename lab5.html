@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> MUSIC FESTIVAL | Locations,Dates,Getting Around</title>
+	<link rel = "icon" href =  
+"logo.png" 
+        type = "image/x-icon"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body link="#000" alink="#017bf5" vlink="#000">
+	<h3 align="center">
+	
+	
+	<div  class="header">
+    <a href="index.html">
+         <img alt="Back to home" src="logo.png">
+      </a>
+    <h1><strong>Fête de la Musique</strong></h1>
+    
+  </div>
+  
+  <hr>
+<div class="togglearea">
+	<label for="toggle">
+		<span></span>
+        <span></span>
+        <span></span>
+	</label>
+</div>
+
+
+<input type="checkbox" id="toggle">
+	
+<div class="navbar">
+	<a href="index.html">HOME</a>
+	<a href="lab2.html">GETTING AROUND</a>
+	<a href="lab5.html">VIDEOS</a>
+	<a href="lab3.html">PHOTO GALLERY</a>
+	<a href="lab4.html">ABOUT US</a>
+	
+	
+</div>
+<div class="container">
+	<h4>Check them OUT! </h4>
+	<div class="row">
+		<div class="col">
+			<div class="feature-img">
+				<img src="7.jpg" width="100%">
+				<img src="play.png"  class="play-btn" onclick="playVideo('Alan.mp4')">
+			</div>
+		</div>
+	    <div class="col">
+		    <div class="small-img-row">
+			   <div class="small-img">
+				<img src="8.jpg">
+				<img src="play.png"  class="play-btn">
+			   </div>
+			   <p>Content 1 <br>Dummy text 
+			   Lorem Ipsum</p>
+			
+		   </div>
+		   <div class="small-img-row">
+			   <div class="small-img">
+				<img src="9.jpg">
+				<img src="play.png"  class="play-btn">
+			   </div>
+			   <p>Content 1 <br>Dummy text 
+			   Lorem Ipsum</p>
+			
+		   </div>
+		   <div class="small-img-row">
+			   <div class="small-img">
+				<img src="10.jpg">
+				<img src="play.png"  class="play-btn" onclick="playVideo('Alan.mp4')">
+			   </div>
+			   <p>Content 1 <br>Dummy text 
+			   Lorem Ipsum</p>
+			
+		   </div>
+
+	    </div>
+   </div>
+</div>
+
+
+<div class="video-player" id="videoPlayer">
+	<video width="100%" controls autoplay id="myVideo">
+		<source src="Alan.mp4" type="video/mp4">
+	</video>
+
+	<img src="close.png" class="close-btn" onclick="stopVideo()">
+	
+</div>
+	
+
+<script>
+	var videoPlayer = document.getElementById("videoPlayer");
+	var myVideo = document.getElementById("myVideo");
+	function stopVideo()
+	{
+		videoPlayer.style.display= "none";
+	}
+	
+	function playVideo(file)
+	{
+		myVideo.src=file;
+		videoPlayer.style.display="block";
+
+	}
+
+</script>
+
+<div class="iframe-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LpRG50nq8gs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+
+
+
+
+
+ <footer>
+    <p>
+      <font face="Lato" color="#fff" size="3"> Copyright &copy; 2020</font>
+      <br>
+    <br>
+    <a id = "GFG" href="#"><font face="Lato" color="#fff" size="3">FAQ</font> </a>
+    <br>
+    <br>
+    <a id = "GFG" href="#"><font face="Lato" color="#fff" size="3">Contact us</font></a>
+    <br>
+    <br>
+    <a id = "GFG" href="#"><font face="Lato" color="#fff" size="3">Help Centre</font></a>
+    <br><br>
+    </p>
+  </footer>
+
+
+</body>
+</html>
