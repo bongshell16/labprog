@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:globalevent xmlns:tns="http://www.example.org/Eventschema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.example.org/Eventschema Eventschema.xsd ">
+  <tns:Event eid="E1">
+    <tns:Eventname>Sunburn Goa</tns:Eventname>
+    <tns:Eventvenue>Vagator</tns:Eventvenue>
+    <tns:EventArtist>Nucleya</tns:EventArtist>
+    <tns:Eventfees>10000</tns:Eventfees>
+  </tns:Event>
+  
+  <tns:Event eid="E2">
+    <tns:Eventname>Alan Walker Concert </tns:Eventname>
+    <tns:Eventvenue>Delhi</tns:Eventvenue>
+    <tns:EventArtist>Alan Walker</tns:EventArtist>
+    <tns:Eventfees>15000</tns:Eventfees>
+  </tns:Event>
+  
+  <tns:Event eid="E3">
+    <tns:Eventname>Bollywood Concert</tns:Eventname>
+    <tns:Eventvenue>Bangalore</tns:Eventvenue>
+    <tns:EventArtist>Arman Malik</tns:EventArtist>
+    <tns:Eventfees>12000</tns:Eventfees>
+  </tns:Event>
+  
+  <tns:Event eid="E4">
+   <tns:Eventname>SUNBURN ARENA WITH DJ SNAKE</tns:Eventname>
+    <tns:Eventvenue>Bangalore</tns:Eventvenue>
+    <tns:EventArtist>DJ Snake</tns:EventArtist>
+    <tns:Eventfees>25000</tns:Eventfees>
+  </tns:Event>
+  
+  <tns:Event eid="E5">
+   <tns:Eventname>Lauv</tns:Eventname>
+    <tns:Eventvenue>Mumbai</tns:Eventvenue>
+    <tns:EventArtist>Lauv</tns:EventArtist>
+    <tns:Eventfees>20000</tns:Eventfees>
+  </tns:Event>
+  
+  <tns:Event eid="E6">
+   <tns:Eventname>Neon East Fest</tns:Eventname>
+    <tns:Eventvenue>Mumbai</tns:Eventvenue>
+    <tns:EventArtist>MURA MASA, Mr. Carmack, Photay and KLLO</tns:EventArtist>
+    <tns:Eventfees>30000</tns:Eventfees>
+  </tns:Event>
+</tns:globalevent>

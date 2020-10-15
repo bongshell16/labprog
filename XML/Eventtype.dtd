@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT Eventdetails (Event+)>
+<!ELEMENT Event (Eventname,Eventvenue,EventArtist,Eventfees)>
+<!ELEMENT Eventname (#PCDATA)>
+<!ELEMENT Eventvenue (#PCDATA)>
+<!ELEMENT EventArtist (#PCDATA)>
+<!ELEMENT Eventfees (#PCDATA)>
+<!ATTLIST Event eid ID #REQUIRED>

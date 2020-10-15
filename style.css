@@ -23,6 +23,7 @@
 .navbar a
 {
 	color: white;
+	opacity: 60%;
 	text-align: center;
 	font-weight: bold;
 	text-decoration: none;
