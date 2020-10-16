@@ -5,6 +5,14 @@
 				 <html>
             <head>
                 <style>
+            
+            body {
+	background-color: black;
+	color:white;
+	font-size: 30px;
+
+}
+            
                 
             .Event
             {
@@ -24,6 +32,11 @@
                 font-size:larger;
                 padding:20px;
                 text-align:center !important;
+            }
+            
+            th 
+            {
+            color:black;
             }
                 </style>
             </head>
