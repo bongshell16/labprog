@@ -72,7 +72,7 @@
   height: 70px;
   background: #555;
   margin-right: 20px;
-
+border-radius: 6px;
 }
 
  
@@ -90,6 +90,7 @@
 .navbar a
 {
   color: white;
+  opacity: 60%;
   text-align: center;
   font-weight: bold;
   text-decoration: none;
@@ -178,7 +179,7 @@
 }
 
   body {
-  background-image: url('imm1.jpg');
+  background-image: url('image/imm1.jpg');
   background-repeat: no-repeat;
    background-position: center;
   background-attachment: fixed;
@@ -188,7 +189,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(imm1.jpg);
+    url(image/imm1.jpg);
 }
 .para p
 {

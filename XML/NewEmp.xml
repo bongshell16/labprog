@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:globalevent xmlns:tns="http://www.example.org/EmpSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/EmpSchema EmpSchema.xsd ">
+  <tns:Employee eid="E1">
+    <tns:Emp-name>tns:Emp-name</tns:Emp-name>
+    <tns:Emp-age>0</tns:Emp-age>
+    <tns:Emp-salary>50000</tns:Emp-salary>
+    <tns:Emp-emailid>tns:Emp-emailid</tns:Emp-emailid>
+    <tns:Emp-Phonenum>0</tns:Emp-Phonenum>
+    <tns:Emp-designation>tns:Emp-designation</tns:Emp-designation>
+  </tns:Employee>
+  
+  
+   <tns:Employee eid="E2">
+    <tns:Emp-name>tns:Emp-name</tns:Emp-name>
+    <tns:Emp-age>0</tns:Emp-age>
+    <tns:Emp-salary>50000</tns:Emp-salary>
+    <tns:Emp-emailid>tns:Emp-emailid</tns:Emp-emailid>
+    <tns:Emp-Phonenum>0</tns:Emp-Phonenum>
+    <tns:Emp-designation>tns:Emp-designation</tns:Emp-designation>
+  </tns:Employee>
+  
+  
+  <tns:Employee eid="E3">
+    <tns:Emp-name>tns:Emp-name</tns:Emp-name>
+    <tns:Emp-age>0</tns:Emp-age>
+    <tns:Emp-salary>50000</tns:Emp-salary>
+    <tns:Emp-emailid>tns:Emp-emailid</tns:Emp-emailid>
+    <tns:Emp-Phonenum>0</tns:Emp-Phonenum>
+    <tns:Emp-designation>tns:Emp-designation</tns:Emp-designation>
+  </tns:Employee>
+  
+</tns:globalevent>

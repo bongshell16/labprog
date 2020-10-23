@@ -128,23 +128,17 @@ label
   height: 70px;
   background: #555;
   margin-right: 20px;
-  border-radius: 6px;
  
 
 }
 
 
   body {
-  background-image: url('image/imm.jpg');
+  background-color:black;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-   background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(image/imm.jpg);
+   
 }
 
 

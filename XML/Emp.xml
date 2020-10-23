@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="EmpStyle.xsl"?>
+<!DOCTYPE Company SYSTEM "Empstruct.dtd">
+
+<Company>
+
+<Employee eid="E1">
+<Emp-name>Rakesh</Emp-name>
+<Emp-age>50</Emp-age>
+<Emp-salary>50000</Emp-salary>
+<Emp-emailid>rakesh123@gmail.com</Emp-emailid>
+<Emp-Phonenum>9807865467</Emp-Phonenum>
+<Emp-designation>Associate Project Manager</Emp-designation>
+</Employee>
+
+
+<Employee eid="E2">
+<Emp-name>Emma</Emp-name>
+<Emp-age>40</Emp-age>
+<Emp-salary>55000</Emp-salary>
+<Emp-emailid>emmaster345@rediffmail.com</Emp-emailid>
+<Emp-Phonenum>9809876546</Emp-Phonenum>
+<Emp-designation>Team Lead</Emp-designation>
+</Employee>
+
+
+
+<Employee eid="E3">
+<Emp-name>Sreeja</Emp-name>
+<Emp-age>26</Emp-age>
+<Emp-salary>450000</Emp-salary>
+<Emp-emailid>sree12345@gmail.com</Emp-emailid>
+<Emp-Phonenum>9089765678</Emp-Phonenum>
+<Emp-designation>Assistant Team Lead</Emp-designation>
+</Employee>
+
+<Employee eid="E4">
+<Emp-name>Robert</Emp-name>
+<Emp-age>51</Emp-age>
+<Emp-salary>50000</Emp-salary>
+<Emp-emailid>robert5623@gmail.com</Emp-emailid>
+<Emp-Phonenum>789876564</Emp-Phonenum>
+<Emp-designation>Associate Manager</Emp-designation>
+</Employee>
+
+<Employee eid="E5">
+<Emp-name>Bella</Emp-name>
+<Emp-age>49</Emp-age>
+<Emp-salary>50000</Emp-salary>
+<Emp-emailid>belladecosta123@gmail.com</Emp-emailid>
+<Emp-Phonenum>8899007687</Emp-Phonenum>
+<Emp-designation>Associate Project Manager</Emp-designation>
+</Employee>
+</Company>

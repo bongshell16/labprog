@@ -2,8 +2,8 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 		<!-- TODO: Auto-generated template -->
-				 <html>
-            <head>
+		<html>
+		  <head>
                 <style>
             
             body {
@@ -41,31 +41,43 @@
                 </style>
             </head>
             <body>
-                <h1 style="text-align:center;">Music Event Management</h1>
+                <h1 style="text-align:center;">Employee Management System</h1>
                 <div class="Event">
                     <h2>List of Events</h2>
                     <table border="2" align="center">
                         <tr bgcolor="#9acd32">
-                            <th style="text-align:left">Eventname</th>
-                            <th style="text-align:left">Eventvenue</th>
-                            <th style="text-align:left">EventArtist</th>
-                            <th style="text-align:left">Eventfees</th>
+                            <th style="text-align:left">ID</th>
+                            <th style="text-align:left">NAME</th>
+                            <th style="text-align:left">AGE</th>
+                            <th style="text-align:left">SALARY</th>
+                             <th style="text-align:left">EMAIL</th>
+                            <th style="text-align:left">MOB NUM</th>
+                            <th style="text-align:left">DESIGNATION</th>
                             
                           
                         </tr>
-                        <xsl:for-each select="Eventdetails/Event">
+                        <xsl:for-each select="Company/Employee">
                             <tr>
                                 <td>
-                                    <xsl:value-of select="Eventname"/>
+                                    <xsl:value-of select="eid"/>
                                 </td>
                                 <td>
-                                    <xsl:value-of select="Eventvenue"/>
+                                    <xsl:value-of select="Emp-name"/>
                                 </td>
                                 <td>
-                                    <xsl:value-of select="EventArtist"/>
+                                    <xsl:value-of select="Emp-age"/>
                                 </td>
                                 <td>
-                                    <xsl:value-of select="Eventfees"/>
+                                    <xsl:value-of select="Emp-salary"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="Emp-emailid"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="Emp-Phonenum"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="Emp-designation"/>
                                 </td>
                             
                             </tr>
@@ -74,14 +86,10 @@
                     </table>
                        
                 </div>
-             
-                
-
-
-                
 
             </body>
         </html>
+		
 		
 	</xsl:template>
 </xsl:stylesheet>

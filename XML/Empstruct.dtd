@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT Company (Employee+)>
+<!ELEMENT Employee (Emp-name,Emp-age,Emp-salary,Emp-emailid,Emp-Phonenum,Emp-designation)>
+<!ELEMENT Emp-name (#PCDATA)>
+<!ELEMENT Emp-age (#PCDATA)>
+<!ELEMENT Emp-salary (#PCDATA)>
+<!ELEMENT Emp-emailid (#PCDATA)>
+<!ELEMENT Emp-Phonenum (#PCDATA)>
+<!ELEMENT Emp-designation (#PCDATA)>
+<!ATTLIST Employee eid ID #REQUIRED>
