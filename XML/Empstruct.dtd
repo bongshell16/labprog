@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!ELEMENT Company (Employee+)>
-<!ELEMENT Employee (Emp-name,Emp-age,Emp-salary,Emp-emailid,Emp-Phonenum,Emp-designation)>
+<!ELEMENT Employee (id,Emp-name,Emp-age,Emp-salary,Emp-emailid,Emp-Phonenum,Emp-designation)>
+<!ELEMENT id (#PCDATA)>
 <!ELEMENT Emp-name (#PCDATA)>
 <!ELEMENT Emp-age (#PCDATA)>
 <!ELEMENT Emp-salary (#PCDATA)>
