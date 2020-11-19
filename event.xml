@@ -1,49 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="Eventstyle.xsl"?>
-<!DOCTYPE Eventdetails SYSTEM "Eventtype.dtd">
-<Eventdetails>
-
- <Event eid="E1">
- <Eventname>Sunburn Goa</Eventname>
- <Eventvenue>Vagator</Eventvenue>
- <EventArtist>Nucleya</EventArtist>
- <Eventfees>10000</Eventfees>
- </Event>
- 
- <Event eid="E2">
- <Eventname>Alan Walker Concert</Eventname>
- <Eventvenue>Delhi</Eventvenue>
- <EventArtist>Alan Walker</EventArtist>
-  <Eventfees>15000</Eventfees>
- </Event>
- 
-  <Event eid="E3" >
-  <Eventname>Bollywood Concert</Eventname>
-  <Eventvenue>Bangalore</Eventvenue>
-  <EventArtist>Arman Malik</EventArtist>
-  <Eventfees>12000</Eventfees>
-  </Event>
- 
-  <Event eid="E4">
-  <Eventname>SUNBURN ARENA WITH DJ SNAKE</Eventname>
-  <Eventvenue>Bangalore</Eventvenue>
-  <EventArtist>DJ Snake</EventArtist>
-  <Eventfees>25000</Eventfees>
-  </Event>
-  
-  <Event eid="E5">
-  <Eventname>Lauv</Eventname>
-  <Eventvenue>Mumbai</Eventvenue>
-  <EventArtist>Lauv</EventArtist>
-  <Eventfees>20000</Eventfees>
-  </Event>
-  
-  <Event eid="E6">
-  <Eventname>Neon East Fest</Eventname>
-  <Eventvenue>Bandra East,Mumbai</Eventvenue>
-  <EventArtist>MURA MASA, Mr. Carmack, Photay and KLLO</EventArtist>
-  <Eventfees>30000</Eventfees>
-  </Event>
-
-
-</Eventdetails>
+<musics>
+<music mid="M1">
+<song>Lovely</song>
+<artist>Billie</artist>
+<size>6</size>
+<price>150</price>
+<download>Lovelymp3</download>
+</music>
+<music mid="M2">
+<song>Erase you</song>
+<artist>Catrien Maxwell</artist>
+<size>5</size>
+<price>165</price>
+<download>EraseYoump3</download>
+</music>
+<music mid="M3">
+<song>Savage Love</song>
+<artist>Jason Derulo</artist>
+<size>5</size>
+<price>210</price>
+<download>SavageLovemp3</download>
+</music>
+<music mid="M4">
+<song>You Broke Me First</song>
+<artist>Tate MCRae</artist>
+<size>7</size>
+<price>196</price>
+<download>YouBrokeMeFirstmp3</download>
+</music>
+<music mid="M5">
+<song>Rockstar</song>
+<artist>DaBaby</artist>
+<size>7</size>
+<price>130</price>
+<download>Rockstarmp3</download>
+</music>
+</musics>
