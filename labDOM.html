@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style>
+h1,p{
+  text-align:center;
+}
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+   margin-left: auto;
+  margin-right: auto;
+}
+th,td {
+  padding: 9px;
+}
+</style>
+<body>
+<h1>LIVE UPDATES ON EVENT DETAILS!!</h1>
+<p>Click on a event to get the details NOW</p>
+<p id='showtrc'></p>
+<table id="demo"></table>
+
+<script>
+var x,xmlhttp,xmlDoc
+xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET", "event.xml", false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;
+x = xmlDoc.getElementsByTagName("music");
+table="<tr><th>EVENT NAME</th><th>EVENT ARTIST</th></tr>";
+for (i = 0; i <x.length; i++) {
+  table += "<tr onclick='displaytrack(" + i + ")'><td>";
+  table += x[i].getElementsByTagName("Eventname")[0].childNodes[0].nodeValue;
+  table += "</td><td>";
+  table +=  x[i].getElementsByTagName("Eventartist")[0].childNodes[0].nodeValue;
+  table += "</td></tr>";
+}
+document.getElementById("demo").innerHTML = table;
+
+function displaytrack(i) {
+  document.getElementById("showtrc").innerHTML =
+  "Event Name " +
+  x[i].getElementsByTagName("Eventname")[0].childNodes[0].nodeValue +
+  "<br>ARTIST: " +
+  x[i].getElementsByTagName("Eventartist")[0].childNodes[0].nodeValue +
+  "<br>Venue: " +
+  x[i].getElementsByTagName("Eventvenue")[0].childNodes[0].nodeValue +
+  "<br>FEES: " +
+  x[i].getElementsByTagName("Eventfees")[0].childNodes[0].nodeValue;
+}
+</script>
+
+</body>
+</html>
