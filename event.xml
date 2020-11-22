@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="Eventstyle.xsl"?>
-<!DOCTYPE Eventdetails SYSTEM "Eventtype.dtd">
+<!--<?xml-stylesheet type="text/xsl" href="Eventstyle.xsl"?>-->
+
 <Eventdetails>
 
  <Event eid="E1">

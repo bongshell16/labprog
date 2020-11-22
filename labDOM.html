@@ -32,7 +32,7 @@ for (i = 0; i <x.length; i++) {
   table += "<tr onclick='displaytrack(" + i + ")'><td>";
   table += x[i].getElementsByTagName("Eventname")[0].childNodes[0].nodeValue;
   table += "</td><td>";
-  table +=  x[i].getElementsByTagName("Eventartist")[0].childNodes[0].nodeValue;
+  table +=  x[i].getElementsByTagName("EventArtist")[0].childNodes[0].nodeValue;
   table += "</td></tr>";
 }
 document.getElementById("demo").innerHTML = table;
@@ -42,7 +42,7 @@ function displaytrack(i) {
   "Event Name :" +
   x[i].getElementsByTagName("Eventname")[0].childNodes[0].nodeValue +
   "<br>ARTIST: " +
-  x[i].getElementsByTagName("Eventartist")[0].childNodes[0].nodeValue +
+  x[i].getElementsByTagName("EventArtist")[0].childNodes[0].nodeValue +
   "<br>Venue: " +
   x[i].getElementsByTagName("Eventvenue")[0].childNodes[0].nodeValue +
   "<br>FEES: " +
