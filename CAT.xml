@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-stylesheet type="text/xsl" href="Eventstyle.xsl"?>-->
+
+<Christ>
+
+ <CS eid="E1">
+ <STU-NAME>Anshuman</STU-NAME>
+ <STU-BRANCH>MCA</STU-BRANCH>
+ <STU-COLLEGE>ABC</STU-COLLEGE>
+ <STU-EMAIL>anshuman78987@gmail.com</STU-EMAIL>
+ </CS>
+ 
+ <CS eid="E2">
+ <STU-NAME>Raghav</STU-NAME>
+ <STU-BRANCH>MSC Data Science</STU-BRANCH>
+ <STU-COLLEGE>XYZ</STU-COLLEGE>
+ <STU-EMAIL>raghavreddy@gmail.com</STU-EMAIL>
+ </CS>
+ 
+  <CS eid="E3">
+ <STU-NAME>Priya</STU-NAME>
+ <STU-BRANCH>MSc Computer Science</STU-BRANCH>
+ <STU-COLLEGE>LMN</STU-COLLEGE>
+ <STU-EMAIL>varpriya123@gmail.com</STU-EMAIL>
+ </CS>
+ 
+ 
+
+
+</Christ>

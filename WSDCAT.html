@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>REGISTRATION FORM|GATEWAYS 2020</title>
+<meta name="keywords" content="CAT WSD Gateways" />
+<meta name="description" content="Test CAT " />
+<link rel='stylesheet' href='CATstyle.css' type='text/css' />
+<script src="CATjava.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+<h1>Gateways 2020-Registration Form</h1>
+Use tab keys to move from one input field to the next.
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="userid">Username:</label></li>
+<li><input type="text" name="userid" size="12" /></li>
+
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" /></li>
+
+<li><label for="username">Name:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+
+<li><label for="state">State</label></li>
+<li><input type="text" name="state" size="50" /></li>
+
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /></li>
+
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li>
+
+<li><label for="college">College/Univ:</label></li>
+<li><input type="text" name="college" size="50" /></li>
+
+<li><label for="account">Branch</label></li>
+<li><select name="account">
+<option selected="" value="Default">(Please select the respective branch)</option>
+<option value="AF">MSc Computer Science</option>
+<option value="AL">Master of Computer Application</option>
+<option value="DZ">MSc Data Science</option>
+<option value="AS">Msc data Analytics</option>
+</select></li>
+
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+
+<li><label for="phone">Phone No.:</label></li>
+<li> <input type="text" name="phone" placeholder="Phone" data-required data-number data-count="10"></li>
+
+<li><label id="gender">Sex:</label></li>
+<li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+
+<li><label for="age">Age:</label></li>
+<li> <input type="text" name="age" placeholder="Enter Age" data-required data-number data-count="2"></li>
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<input type="checkbox" id="rem_check" checked="checked" name="remember"> <font face="Lato" color="#fff" size="3">Remember me</font>
+
+
+<li><input type="submit" name="submit" value="Submit" onclick="Setcookie()" /></li>
+</ul>
+</form>
+
+<script>
+    function Setcookie()
+    {
+        if(document.getElementById("rem_check").checked==true)
+        {
+            document.cookie="username="+document.getElementById("username").value+";expires=Thu, 19 Nov 2021 23:50:00 UTC";;
+            document.cookie="password="+document.getElementById("password").value;
+            window.location.href("index.html");
+            alert("Login Successfull");
+        }
+    }
+    window.onload=function()
+    {
+        if(document.cookie.length!=0)
+        {
+            var Allcookies,Temp;
+            Allcookies=document.cookie.split(";");   
+            for(var i=0;i<Allcookies.length;i++)
+            {
+                Temp=Allcookies[i].split("=");
+                if(Temp[0]=="username")
+                {
+                    document.getElementById("username").value=Temp[1];
+                }
+                if(Temp[0]==" password")
+                {
+                    document.getElementById("password").value=Temp[1];
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
+
