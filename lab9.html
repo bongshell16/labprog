@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC FESTIVAL | Locations,Dates,Getting Around</title>
+    <link rel = "icon" href =  
+"image/logo.png" 
+        type = "image/x-icon"> 
+    <script src="angular.min.js"></script>
+    <script src="course.js"></script>
+    <style>
+        body {
+       background-color: black;
+       color:white;
+       
+   
+   }
+   
+   h1,p{
+     text-align:center;
+   }
+   table,th,td {
+     border : 1px solid rgb(240, 233, 233);
+     border-collapse: collapse;
+      margin-left: auto;
+     margin-right: auto;
+   }
+   th,td {
+     font-size:larger;
+                   padding:20px;
+                   text-align:center !important;
+   }
+   
+   </style>
+</head>
+<body ng-app="myapp" ng-controller="myctrl">
+   <h3>EVENT INFORMATION</h3>
+    <table cellpadding="2" cellspacing="2" border="1">
+        <tr>
+            <th>Index</th>
+            <th>EVENT ID</th>
+            <th>ARTIST NAME</th>
+            <th>PRICE</th>
+            <th>NUMBER OF HOURS</th>
+            <th>OPTIONS</th>
+        </tr>
+        <tr ng-repeat="event in listEvent">
+            <td>{{$index}}</td>
+            <td>{{event.id}}</td>
+            <td>{{event.name}}</td>
+            <td>{{event.price | currency:"&#8377;":0}}</td>
+            <td>{{event.hours}}</td>
+            <td>
+                <a href="#" ng-click="delete()">Delete</a> |
+                <a href="#" ng-click="edit(event.id)">Edit</a>
+            </td>
+        </tr>
+    </table>
+    <h3>EVENT Addition/Modification</h3>
+   
+    <table cellpadding="2" cellspacing="2">
+        <tr>
+            <td>EVENT ID</td>
+            <td><input type="text" ng-model="id"></td>
+        </tr>
+        <tr>
+            <td>ARTIST NAME</td>
+            <td><input type="text" ng-model="name"></td>
+        </tr>
+        <tr>
+            <td>PRICE</td>
+            <td><input type="text" ng-model="price"></td>
+        </tr>
+        <tr>
+            <td>NUMBER OF HOURS</td>
+            <td><input type="text" ng-model="hours"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="button" value="ADD" ng-click="add()">
+            <input type="button" value="SAVE" ng-click="save()"></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

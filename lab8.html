@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC FESTIVAL | Locations,Dates,Getting Around</title>
+    <link rel = "icon" href =  
+"image/logo.png" 
+        type = "image/x-icon"> 
+    <script src="angular.min.js"></script>
+    <script src="filter_app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+       background-color: black;
+       color:white;
+       
+   
+   }
+   
+  
+   table,th,td {
+     border : 1px solid rgb(240, 233, 233);
+     border-collapse: collapse;
+      margin-left: auto;
+     margin-right: auto;
+   }
+   th,td {
+     font-size:larger;
+                   padding:20px;
+                   text-align:center !important;
+   }
+   
+   </style>
+</head>
+<body ng-app="MyApp">
+    <h3 align="center">
+	
+	
+        <div  class="header">
+        <a href="index.html">
+             <img alt="Back to home" src="image/logo.png">
+          </a>
+        <h1><strong>Fête de la Musique</strong></h1>
+        
+      </div>
+      
+      <hr>
+    
+    
+    <div class="togglearea">
+        <label for="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    
+    
+    <input type="checkbox" id="toggle">
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="lab2.html">GETTING AROUND</a>
+        <a href="lab5.html">VIDEOS</a>
+        <a href="lab3.html">PHOTO GALLERY</a>
+        <a href="lab4.html">ABOUT US</a>
+        <a href="XML/Emp.xml">WSD_CIA1 (XML File)</a> 
+        
+        
+    </div>
+    <br><br><br>
+    
+    
+    <div ng-controller="MyCtrl">
+        Rows to Display:&nbsp;&nbsp;&nbsp;<input type="number" step="1" min="0" max="6" ng-model="rowlimit" />
+        <br \>
+        <br \>
+
+        Search:&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Search City" ng-model="Search" />
+        <br \>
+        <br \>
+        <table>
+            <tr>
+                <th>City Name</th>
+                <th>City PINCODE</th>
+                <th>Mode</th>
+                <th>Opening Hours </th>
+                <th>Price</th>
+            </tr>
+            <tbody>
+                <tr ng-repeat="city in city | limitTo:rowlimit |filter:Search ">
+                    <td>{{city.name | uppercase}}</td>
+                    <td>{{city.id | number:0}}</td>
+                    <td>{{city.mode | lowercase}}</td>
+                    <td>{{city.hours | number:0}}</td>
+                    <td> {{city.price | currency:"&#8377;":0 }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br><br><br><br><br>
+    <footer>
+        <p>
+          <font face="Lato" color="#fff" size="3"> Copyright &copy; 2020</font>
+          <br>
+        <br>
+        <a id = "GFG" href="#"><font face="Lato" color="#fff" size="3">FAQ</font> </a>
+        <br>
+        <br>
+        <a id = "GFG" href="#"><font face="Lato" color="#fff" size="3">Contact us</font></a>
+        <br>
+        <br>
+        <a id = "GFG" href="lab9.html"><font face="Lato" color="#fff" size="3">LAB 9</font></a>
+        <br>
+        <br>
+        <a id = "GFG" href="lab8.html"><font face="Lato" color="#fff" size="3">Help Centre</font></a>
+        <br><br>
+        </p>
+      </footer>
+    
+    
+</body>
+</html>
